@@ -1,0 +1,268 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*class*/
+.d-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex-a-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-warp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.d-flex-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
+.d-flex-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.d-flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-absolute {
+  position: absolute;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.a-0 {
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.dis-none {
+  display: none;
+}
+.dis-block {
+  display: block;
+  transition-delay: 0.25s;
+}
+/* product_detail------------------------------------- */
+.container-pd-detail {
+  padding: 100px;
+}
+.pd-detail {
+  display: flex;
+  flex-direction: row;
+}
+.pd-img {
+  width: calc((8 / 12) * 100%);
+  justify-content: space-between;
+}
+.pd-detail > div:last-child {
+  width: calc((4 / 12) * 100%);
+  padding: 10px 30px;
+}
+.pd-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pd-img img {
+  width: calc((6 / 12 * 100% - 20px));
+  margin: 10px;
+}
+.pd-name {
+  font-size: xx-large;
+  margin-bottom: 18px;
+}
+.pd-rate {
+  margin-bottom: 18px;
+}
+.pd-rate i,
+.quantity-rate,
+.pd-rate a {
+  margin-right: 3px;
+  font-size: medium;
+}
+.pd-rate a {
+  color: rgb(77, 77, 77);
+}
+.quantity-rate {
+  color: rgb(77, 77, 77);
+}
+.pd-price {
+  font-size: x-large;
+  margin-bottom: 36px;
+}
+.pd-color p {
+  margin: 18px 0 12px 0;
+  color: rgb(77, 77, 77);
+}
+.pd-color div {
+  display: flex;
+}
+.input-color {
+  display: block;
+  position: relative;
+  margin: 0 18px 12px 4px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+.input-color input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.checkmark1::after {
+  content: "";
+  border: 1px solid rgb(0, 0, 0);
+  position: absolute;
+  height: 36px;
+  top: -4px;
+  left: -4px;
+  width: 36px;
+  border-radius: 100%;
+  display: none;
+}
+
+.input-color input:checked ~ .checkmark1::after {
+  display: block;
+}
+.pd-size p {
+  margin: 18px 0;
+}
+.input-size {
+  /* display: block; */
+  position: relative;
+  margin: 0 18px 12px 0px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(198, 198, 198);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-size input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  height: 50px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.input-size input:checked ~ .checkmark2 {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.pd-Quantity {
+  position: relative;
+  margin-right: 10px;
+}
+.pd-Quantity select {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  height: 60px;
+  width: 100px;
+
+  color: rgb(108, 108, 108);
+  padding: 30px 10px 10px 10px;
+  /* z-index: 1; */
+}
+.pd-Quantity::before {
+  position: absolute;
+  content: "Qty";
+  width: 100px;
+  height: 100px;
+  /* background-color: aqua; */
+  top: 10px;
+  /* z-index: 2; */
+  left: 10px;
+}
+.submit p {
+  margin: 18px 0 12px 0;
+  color: rgb(77, 77, 77);
+}
+.submit > div {
+  display: flex;
+}
+.submit > div > button {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  width: 300px;
+
+  font-size: larger;
+}
+.submit > div > button:hover {
+  background-color: rgb(58, 58, 58);
+}
